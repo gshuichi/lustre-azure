@@ -4,6 +4,6 @@
   "itemDisplayName": "DDN Exascaler",
   "description": "This template creates DDN Exascaler node VMss",
   "summary": "Lustre server nodes",
-  "githubUsername": "sihara",
+  "githubUsername": "gshuichi",
   "dateUpdated": "2018-12-30"
 }

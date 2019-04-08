@@ -14,7 +14,7 @@
 		},
 		"artifactsBaseUrl": {
 			"type": "string",
-			"defaultValue": "https://raw.githubusercontent.com/sihara/exascaler-azure/master/",
+			"defaultValue": "https://raw.githubusercontent.com/gshuichi/lustre-azure/master/",
 			"metadata": {
 				"description": "Base URL of the solution template gallery package",
 				"artifactsBaseUrl": ""
@@ -50,7 +50,7 @@
 		},
 		"adminUsername": {
 			"type": "string",
-			"defaultValue": "ddnadmin",
+			"defaultValue": "msadmin",
 			"metadata": {
 				"description": "Admin username for the virtual machines"
 			}
@@ -147,7 +147,7 @@
 		},
 		"existingVnetResourceGroup": {
 			"type": "string",
-			"defaultValue": "ddnrg",
+			"defaultValue": "lustrerg",
 			"metadata": {
 				"description": "Virtual Network Resource Group for cases when Lustre nodes are deployed into an existing VNet"
 			}

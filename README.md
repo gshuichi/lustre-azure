@@ -5,4 +5,4 @@
   <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-This template lets you create DDN Exascaler on Azure.
+This template lets you create Lustre on Azure.
