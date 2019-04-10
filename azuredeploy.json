@@ -71,43 +71,43 @@
 		},
 		"dnsNamePrefix": {
 			"type": "string",
-			"defaultValue": "exascaler",
+			"defaultValue": "lustre",
 			"metadata": {
 				"description": "Globally unique DNS name prefix name must be between 3 and 50 characters long and can contain only dashes, numbers, and lowercase letters. The domain name suffix (e.g. westus.cloudapp.zure.com) will be automatically updated based on the selected location."
 			}
 		},
 		"mgsVmSize": {
 			"type": "string",
-			"defaultValue": "Basic_A1",
+			"defaultValue": "Standard_D2s_v3",
 			"metadata": {
 				"description": "Size of the Management Server (MGS) that stores configuration information for all Lustre filesystems in a cluster."
 
 			},
 			"allowedValues": [
-				"Basic_A1",
-				"Basic_A2"
+				"Standard_D2s_v3",
+				"Standard_DS2_v2"
 			]
 		},
 		"mdsVmSize": {
 			"type": "string",
-			"defaultValue": "Basic_A1",
+			"defaultValue": "Standard_D2s_v3",
 			"metadata": {
 				"description": "Size of the Metadata Server (MDS) that makes metadata (e.g. files, directories, permissions) available to Lustre clients"
 			},
 			"allowedValues": [
-				"Basic_A1",
-				"Basic_A2"
+				"Standard_D2s_v3",
+				"Standard_DS2_v2"
 			]
 		},
 		"ossVmSize": {
 			"type": "string",
-			"defaultValue": "Basic_A1",
+			"defaultValue": "Standard_DS3_v2",
 			"metadata": {
 				"description": "Size of the Object Storage Server (OSS) that provides file I/O service and network request handling for one or more attached disks referred to as Object Storage Target (OST)"
 			},
 			"allowedValues": [
-				"Basic_A1",
-				"Basic_A2"
+				"Standard_DS3_v2",
+				"Standard_D8s_v3"
 			]
 		},
                 "mdsCount": {
@@ -126,21 +126,21 @@
 		},
                 "mdsDiskSize": {
                         "type": "int",
-                        "defaultValue": 128,
+                        "defaultValue": 1024,
                         "metadata": {
                                 "description": "Size of the data disks to use for the MDTs. All MDS instances have 3 data disks attached."
                         }
                 },
 		"ossDiskSize": {
 			"type": "int",
-			"defaultValue": 128,
+			"defaultValue": 1024,
 			"metadata": {
 				"description": "Size of the data disks to use for the OSTs. All OSS instances have 3 data disks attached."
 			}
 		},
 		"filesystemName": {
 			"type": "string",
-			"defaultValue": "scratch",
+			"defaultValue": "lustre",
 			"metadata": {
 				"description": "Name of the Lustre filesytem (e.g. scratch, lustre, shared_data) that will be mounted from clients as mgsip@tcp0:/filesystemname"
 			}
