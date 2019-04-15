@@ -403,6 +403,7 @@
 		"location": "[parameters('location')]",
 		"dependsOn": [
 			"[concat('Microsoft.Resources/deployments/', 'vnet')]",
+			"[concat('Microsoft.Network/networkInterfaces/', concat(parameters('vmNamePrefix'),'-mgs'))]"
 		],
 		"copy": {
 			"name": "mdsNicCopy",
@@ -481,7 +482,8 @@
 		"location": "[parameters('location')]",
 		"dependsOn": [
 			"[concat('Microsoft.Resources/deployments/', 'vnet')]",
-			"[concat('Microsoft.Network/networkInterfaces/', parameters('vmNamePrefix'), '-mds', copyIndex())]"
+			"[concat('Microsoft.Network/networkInterfaces/', parameters('vmNamePrefix'), '-mds', copyIndex())]",
+			"[concat('Microsoft.Network/networkInterfaces/', concat(parameters('vmNamePrefix'),'-mgs'))]"
 		],
 		"copy": {
 			"name": "ossNicCopy",
