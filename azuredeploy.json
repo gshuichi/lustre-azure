@@ -309,7 +309,7 @@
 			"ipConfigurations": [{
 				"name": "ip1",
 				"properties": {
-					"privateIPAllocationMethod": "Static",
+					"privateIPAllocationMethod": "Dynamic",
 					"publicIPAddress": {
 						"id": "[resourceId('Microsoft.Network/publicIPAddresses', concat(parameters('vmNamePrefix'), '-mgs'))]"
 					},
